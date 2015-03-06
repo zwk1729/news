@@ -1,0 +1,30 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:actionBarStyle">@style/my_actionbar_style</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>  
+    </style>
+
+    <style name="my_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/translate_to_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/translate_to_left_hide</item>
+        <item name="android:activityCloseEnterAnimation">@anim/translate_to_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/translate_to_right_hide</item>
+    </style>
+
+    <string name="app_name">新闻</string>
+    <string name="drawer_open"></string>
+    <string name="drawer_close"></string>
+    <string name="action_websearch"></string>
+    <string name="app_not_available"></string>
+    <string name="item1">账号信息</string>
+    <string name="item2">帮助与反馈</string>
+    <string name="item3">关于</string>
+
+</resources>
